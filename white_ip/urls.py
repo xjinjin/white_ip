@@ -21,4 +21,6 @@ from add_ip import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('add_ip/', views.add_white_ip.as_view()),
+    path('delete_ip/', views.delete_white_ip.as_view()),
+    path('check_ip/', views.check_white_ip.as_view()),
 ]
